@@ -23,7 +23,12 @@ let userName = document.querySelector(".user-info__username"),
   avatar = document.querySelector(".avatar"),
   userRepos = document.querySelector(".user__repos-h1"),
   followers = document.querySelector(".user__followers-h1"),
-  following = document.querySelector(".user__following-h1");
+  following = document.querySelector(".user__following-h1"),
+
+  locate = document.querySelector(".link__location-p"),
+  website = document.querySelector(".link__website-p"),
+  twitter = document.querySelector(".link__twitter-p"),
+  company = document.querySelector(".link__company-p");
 
 dayNight.addEventListener("click", changeTheme);
 
@@ -82,8 +87,8 @@ function apiSearch(params) {
       if (data.message == "Not Found") {
         console.log("Not Found");
       } else {
-        userInfoName.textContent = data.name;
-        userInfoBio.textContent = data.bio;
+        data.name ? userInfoName.textContent = data.name : userInfoName.textContent = "No name";
+        data.bio ? userInfoBio.textContent = data.bio : userInfoBio.textContent = "Has no bio";
         userName.textContent = data.login;
         joinDateParagraph.textContent = new Date(
           data.created_at
@@ -93,6 +98,10 @@ function apiSearch(params) {
         followers.textContent = data.followers;
         following.textContent = data.following;
 
+        data.location ? locate.textContent = data.location : locate.textContent = "NO location";
+        data.twitter_username ? twitter.textContent = data.twitter_username : twitter.textContent = "No twitter";
+        data.company ? company.textContent = data.company : company.textContent = "No company";
+        data.blog ? website.textContent = data.blog : blog.textContent = "No blog";
 
         console.log(data);
         inputSearch.value = "";
@@ -106,4 +115,3 @@ window.addEventListener("keydown", (e) => {
     apiSearch();
   }
 });
-
