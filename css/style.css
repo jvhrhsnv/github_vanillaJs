@@ -13,6 +13,8 @@
 body {
   font-family: "Space Mono", monospace;
   background-color: var(--dark-blue);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container {

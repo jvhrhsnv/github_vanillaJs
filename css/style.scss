@@ -12,6 +12,7 @@
 body {
   font-family: "Space Mono", monospace;
   background-color: var(--dark-blue);
+  transition: .3s;
 }
 .container {
   margin: 0 auto;
@@ -215,8 +216,6 @@ main {
     height: 40px;
     .search__icon {
       font-size: 20px;
-    }
-    .search__input {
     }
     .search__button {
       width: 80px;
