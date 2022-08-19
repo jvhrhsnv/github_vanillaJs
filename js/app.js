@@ -101,9 +101,7 @@ function apiSearch(params) {
         data.location ? locate.textContent = data.location : locate.textContent = "NO location";
         data.twitter_username ? twitter.textContent = data.twitter_username : twitter.textContent = "No twitter";
         data.company ? company.textContent = data.company : company.textContent = "No company";
-        data.blog ? website.textContent = data.blog : blog.textContent = "No blog";
-
-        console.log(data);
+        data.blog ? website.textContent = data.blog : website.textContent = "No blog";
         inputSearch.value = "";
       }
     });
