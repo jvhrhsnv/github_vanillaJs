@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    />
+    <title>Github</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <div class="site__name">devfinder</div>
+        <div class="day-night__btn day-dim-text">
+          <p class="day-night-text">
+            knox!
+          </p>
+          <i class="fa-solid fa-sun"></i>
+        </div>
+      </header>
+
+      <div class="search-bar container">
+        <div class="search__icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="search__input day-dark-text">
+          <input autocomplete="off" autofocus required type="search" name="search" id="search" placeholder="Search GitHub username…" />
+        </div>
+        <div class="search__button">
+          <button>Search</button>
+        </div>
+      </div>
+
+      <main class="container">
+        <div class="user__image">
+          <img
+            src="./img/octocat.png"
+            alt="user image"
+          />
+        </div>
+
+        <div class="user">
+          <div class="user-desc">
+            <div class="user-info">
+              <h1 class="user-info__name">The Octocat</h1>
+              <p class="user-info__username">@octocat</p>
+              <p class="user-info__bio">
+                This profile has no bio
+              </p>
+            </div>
+            <div class="join-date">
+              <p class="join-date__paragraph">Joined 25 Jan 2011</p>
+            </div>
+          </div>
+
+          <div class="user-repos-followers-following">
+            <div class="user__repos">
+              <p class="user__repos-p">Repos</p>
+              <h1 class="user__repos-h1">8</h1>
+            </div>
+            <div class="user__followers">
+              <p class="user__followers-p">Followers</p>
+              <h1 class="user__followers-h1">3938</h1>
+            </div>
+            <div class="user__following">
+              <p class="user__following-p">Following</p>
+              <h1 class="user__following-h1">9</h1>
+            </div>
+          </div>
+
+          <div class="link">
+            <div class="link__location-website">
+              <div class="link__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="link__location-p">San Francisco</p>
+              </div>
+               <div class="link__website">
+                <i class="fa-solid fa-link"></i>
+                <p class="link__website-p">https://github.blog</p>
+              </div>
+            </div>
+            <div class="link__twitter-company">
+              <div class="link__twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <p class="link__twitter-p">Not available</p>
+              </div>
+              <div class="link__company">
+               <i class="fa-solid fa-building"></i>
+                <p class="link__company-p">Amazon</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
